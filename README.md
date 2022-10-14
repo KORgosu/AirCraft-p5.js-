@@ -2,7 +2,7 @@
 
 Entertainment software homework
 
-//AriCraft
+//AirCraft
 https://editor.p5js.org/KORgosu/sketches/Y0RwNovZj
 
 // AllDayLongTree
