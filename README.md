@@ -19,3 +19,6 @@ https://editor.p5js.org/KORgosu/sketches/LkxK8dBIP
 
 // Star_Pattern_by_rect
 https://editor.p5js.org/KORgosu/sketches/OCsMK6GEx
+
+// Burberry_stripe
+https://editor.p5js.org/KORgosu/sketches/4-ufA88AH
