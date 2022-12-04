@@ -1,0 +1,60 @@
+let ang = 0;
+let angD = 10;
+let movingX = 0;
+let movingS;
+let Deg = 360 / angD;
+
+function setup() {
+  createCanvas(400, 400);
+  background(0);
+  angleMode(DEGREES);
+  frameRate(20);
+  let f = 2;
+  movingS = (width / f) / Deg;
+}
+
+function draw() {
+  
+  strokeWeight(5);
+  stroke(255, 255, 255);
+  let snowX = random(400);
+  let snowY = random(400);
+  point(snowX, snowY);
+  
+  
+  let r = 50;
+  let x = r * sin(ang);
+  let y = r * cos(ang);
+  
+  push();
+  translate(width/2, 0);
+  stroke(42,214,42);
+  line(0, 0, x, height - 40)
+  pop();
+  
+  push();
+  translate(width/2, 0);
+  strokeWeight(5);
+  stroke(255, 0, 0);
+  point(x + y + 30, (int) (movingX + 1));
+  stroke(0, 0, 255);
+  point(x - y - 20, (int) (movingX + 3));
+  stroke(255, 255, 0);
+  point(x, (int) (movingX));
+  stroke(0, 255, 255);
+  point(y, (int) (movingX));
+  pop();
+  
+  noStroke();
+  fill(121, 85, 72);
+  quad(width/2 - 20, height, width/2 + 20, height, width/2 + 10, height - 40, width/2 - 10, height - 40);
+  
+  
+  movingX += movingS + 1;
+  ang += angD;
+  ang = (ang) % 360;
+  Deg += 10;
+  if (movingX > width)
+    noLoop();
+
+}
