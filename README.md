@@ -1,6 +1,6 @@
 # p5js
 
-Entertainment software homework
+Entertainment Software & Visual Programming
 
 //AirCraft
 https://editor.p5js.org/KORgosu/sketches/Y0RwNovZj
